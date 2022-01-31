@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/devjutsu/SolidityExperiments/issues"
   },
-  "homepage": "https://github.com/devjutsu/SolidityExperiments#readme"
+  "homepage": "https://github.com/devjutsu/SolidityExperiments#readme",
+  "dependencies": {
+    "solc": "^0.8.11"
+  }
 }
