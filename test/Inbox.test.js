@@ -6,16 +6,10 @@ const web3 = new Web3(provider);
 
 //const web3 = new Web3(ganache.provider);
 
-
-beforeEach(() => {
+let accounts;
+beforeEach(async () => {
     console.log('test prep');
-    web3.eth.getAccounts()
-        .then(accounts => {
-            console.log(accounts);
-        })
-        .catch(err => {
-            console.log(err);
-        });
+    accounts = await web3.eth.getAccounts();
 });
 
 describe('Inbox',() => {
