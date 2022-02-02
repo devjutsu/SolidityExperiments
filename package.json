@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/devjutsu/SolidityExperiments#readme",
   "dependencies": {
-    "solc": "^0.8.11"
+    "ganache-cli": "^6.12.2",
+    "mocha": "^9.2.0",
+    "solc": "^0.8.11",
+    "web3": "^1.7.0"
   }
 }

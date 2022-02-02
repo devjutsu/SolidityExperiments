@@ -40,7 +40,7 @@ solcInput = JSON.stringify(solcInput);
 
 result = solc.compile(solcInput);
 parsed = JSON.parse(result);
-console.log(JSON.stringify(parsed.contracts.contract["Inbox"], null, 2));
+//console.log(JSON.stringify(parsed.contracts.contract["Inbox"], null, 2));
 
 module.exports = parsed.contracts.contract["Inbox"]
 
