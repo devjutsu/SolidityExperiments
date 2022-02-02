@@ -38,9 +38,17 @@ var solcInput = {
 
 solcInput = JSON.stringify(solcInput);
 
-console.log(solcInput);
-console.log("\n");
 result = solc.compile(solcInput);
-console.log(JSON.stringify(result));
+parsed = JSON.parse(result);
+console.log(JSON.stringify(parsed.contracts.contract["Inbox"], null, 2));
 
-//module.exports = solc.compile(solcInput).contracts['Inbox']
+module.exports = parsed.contracts.contract["Inbox"]
+
+// fs.writeFile("test.txt", result, function(err) {
+//     if (err) {
+//         console.log(err);
+//     }
+// });
+
+// var jsonString = '{"some":"json"}';
+// console.log(JSON.stringify(JSON.parse(jsonString),null,2));
